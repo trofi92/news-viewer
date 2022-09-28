@@ -29,11 +29,11 @@ const NewsList = ({ category }) => {
     return <NewsListBlock>Loading...</NewsListBlock>;
   }
 
-  //아직 response 값이 설정되지 않았을 때
+  //when it doesn't set response values
   if (!response) {
     return null;
   }
-  //에러가 발생했을때
+  // when causing error
   if (error) {
     return <NewsListBlock>Error!</NewsListBlock>;
   }
